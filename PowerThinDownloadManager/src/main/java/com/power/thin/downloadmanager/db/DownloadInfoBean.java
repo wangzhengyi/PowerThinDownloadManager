@@ -47,4 +47,13 @@ public class DownloadInfoBean {
     public void setDownloadSize(String downloadSize) {
         this.mDownloadSize = downloadSize;
     }
+
+    @Override
+    public String toString() {
+        return "requestId=" + mRequestId + "; "
+                + "downloadUrl=" + mDownloadUrl + "; "
+                + "destinationPath=" + mDestinationPath + "; "
+                + "totalSize=" + mTotalSize + ";"
+                + "downloadSize=" + mDownloadSize + ". ";
+    }
 }
